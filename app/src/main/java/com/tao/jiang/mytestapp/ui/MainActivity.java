@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.btn_2: {
+                Intent intent = new Intent(this, ServiceActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 
@@ -39,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.btn_1);
+        button.setOnClickListener(this);
+
+        button = (Button) findViewById(R.id.btn_2);
         button.setOnClickListener(this);
     }
 

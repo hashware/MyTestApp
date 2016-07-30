@@ -27,6 +27,12 @@
                 android:id="@+id/btn_1"
                 style="@style/main_menu_btn_style"
                 android:text="下载任务" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/main_menu_btn_style"
+                android:text="服务" />
+
         </LinearLayout>
     </ScrollView>
 
