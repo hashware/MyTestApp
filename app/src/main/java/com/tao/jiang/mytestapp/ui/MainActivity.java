@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.tao.jiang.mytestapp.R;
+import com.tao.jiang.mytestapp.utils.Utils;
+
+import java.io.Serializable;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
@@ -36,6 +39,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             }
+            case R.id.btn_4: {
+                Intent intent = new Intent(this, PopupActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 
@@ -49,7 +57,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         View rootView = ((ViewGroup) getWindow().getDecorView().findViewById(android.R.id.content)).getChildAt(0);
 
         Log.d(TAG, "rootView: " + rootView);
-
+        Utils.getNavigationBarHeight(activity);
+        Utils.getStatusBarHeight(activity);
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_main);
@@ -73,7 +82,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         button = (Button) findViewById(R.id.btn_3);
         button.setOnClickListener(this);
+
+        button = (Button) findViewById(R.id.btn_4);
+        button.setOnClickListener(this);
     }
 
+
+    class User implements Serializable {
+
+    }
 
 }

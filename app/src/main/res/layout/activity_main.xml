@@ -38,6 +38,12 @@
                 android:id="@+id/btn_3"
                 style="@style/main_menu_btn_style"
                 android:text="自定义view" />
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/main_menu_btn_style"
+                android:text="弹出窗口" />
+
         </LinearLayout>
     </ScrollView>
 

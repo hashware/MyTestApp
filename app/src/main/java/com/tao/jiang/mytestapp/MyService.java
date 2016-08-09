@@ -7,6 +7,8 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.tao.jiang.mytestapp.utils.WindowUtils;
+
 /**
  * Created by Jiang on 2016/7/30.
  */
@@ -24,6 +26,8 @@ public class MyService extends Service {
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "onCreate");
+
+        WindowUtils.showPopupWindow(this);
     }
 
     @Override
