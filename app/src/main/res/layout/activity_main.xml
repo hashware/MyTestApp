@@ -44,6 +44,11 @@
                 style="@style/main_menu_btn_style"
                 android:text="弹出窗口" />
 
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/main_menu_btn_style"
+                android:text="自定义Listview" />
+
         </LinearLayout>
     </ScrollView>
 
