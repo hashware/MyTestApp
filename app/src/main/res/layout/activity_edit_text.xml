@@ -9,4 +9,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tao.jiang.mytestapp.ui.EditTextActivity">
 
+    <EditText
+        android:id="@+id/et_1"
+        style="@style/main_menu_btn_style"
+        android:text=""
+        android:hint="输入" />
+
 </RelativeLayout>

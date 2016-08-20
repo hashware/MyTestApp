@@ -49,6 +49,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             }
+            case R.id.btn_6: {
+                Intent intent = new Intent(this, EditTextActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 
@@ -92,6 +97,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         button.setOnClickListener(this);
 
         button = (Button) findViewById(R.id.btn_5);
+        button.setOnClickListener(this);
+
+        button = (Button) findViewById(R.id.btn_6);
         button.setOnClickListener(this);
     }
 
